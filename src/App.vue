@@ -11,6 +11,22 @@ export default defineComponent({
   components: {
     List,
   },
+  data() {
+    return [
+        {
+          name: "Derakia",
+          alt: 300,
+          rate: 5,
+          rising: true,
+        },
+        {
+          name: "Lupland",
+          alt: 500,
+          rate: 7,
+          rising: false,
+        },
+      ]
+  }
 });
 </script>
 
