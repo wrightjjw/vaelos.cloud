@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <ListItem />
-  </div>
+    <ListItem v-for="i in islands" :key="i.name" v-bind="i" />
 </template>
 
 <script lang="ts">
@@ -10,6 +8,9 @@ export default {
   components: {
     ListItem,
   },
+  props: {
+    islands: {required: true},  //TODO: Create island type
+  }
 }
 </script>
 

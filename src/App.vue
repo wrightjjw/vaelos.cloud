@@ -1,5 +1,5 @@
 <template>
-  <List />
+  <List v-bind:islands="this.islands" />
 </template>
 
 <script lang="ts">
@@ -12,7 +12,8 @@ export default defineComponent({
     List,
   },
   data() {
-    return [
+    return {
+      islands: [
         {
           name: "Derakia",
           alt: 300,
@@ -25,7 +26,8 @@ export default defineComponent({
           rate: 7,
           rising: false,
         },
-      ]
+      ],
+    };
   }
 });
 </script>
