@@ -1,7 +1,11 @@
 <template>
-  <div>
-    <h2>Name: {{name}}</h2>
-    Altitude: {{alt}}
+  <div class="mdc-card list-card">
+    <div class="mdc-card__content">
+      <div class="card-title">{{name}}</div>
+      <div class="card-content">
+        Altitude: {{alt}}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -14,6 +18,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass">
+@use "@material/card"
+@include card.core-styles
+
+.list-card
+  width: 30vw
+  margin: auto
+  margin-bottom: 10px
+  text-align: left
+  padding: 5px 10px
+
+.card-title
+  font-size: x-large
+  font-weight: bold
+  padding-bottom: 5px
 
 </style>
