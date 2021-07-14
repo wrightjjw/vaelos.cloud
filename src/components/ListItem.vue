@@ -2,6 +2,7 @@
   <div class="mdc-card list-card">
     <div class="mdc-card__content">
       <div class="card-title">{{name}}</div>
+      <hr>
       <div class="card-content">
         Altitude: {{alt}}
       </div>
@@ -32,6 +33,5 @@ export default {
 .card-title
   font-size: x-large
   font-weight: bold
-  padding-bottom: 5px
 
 </style>
