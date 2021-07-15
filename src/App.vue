@@ -4,6 +4,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Island from './types/Island';
 import List from './views/List.vue';
 
 export default defineComponent({
@@ -18,14 +19,18 @@ export default defineComponent({
           name: "Derakia",
           alt: 300,
           rate: 5,
-          rising: true,
-        },
+          rise: true,
+          max: 100000,
+          min: 0,
+        } as Island,
         {
           name: "Lupland",
           alt: 500,
           rate: 7,
-          rising: false,
-        },
+          rise: false,
+          max: 100000,
+          min: 0,
+        } as Island,
       ],
     };
   }

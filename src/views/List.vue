@@ -4,12 +4,13 @@
 
 <script lang="ts">
 import ListItem from '../components/ListItem.vue';
+import {emptyIsland} from '../types/Island';
 export default {
   components: {
     ListItem,
   },
   props: {
-    islands: {required: true},  //TODO: Create island type
+    islands: {required: true, type: [emptyIsland]},  //TODO: Create island type
   }
 }
 </script>
